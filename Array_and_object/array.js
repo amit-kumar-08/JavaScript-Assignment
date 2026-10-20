@@ -97,7 +97,8 @@ console.log(marks);
 
 //================================Question 5========================================
 //Yes we can update a value at an index that is currently outside the bounds of the array.
-//arrays can have empty slots between existing elements when you assign values to higher indexes. and length of array will also updated higher index value+1
+//arrays can have empty slots between existing elements when you assign values to higher indexes. 
+// and length of array will also updated higher index value+1
 
 
 // # 5. Array Length
@@ -148,4 +149,5 @@ for (let i = 0; i < students.length; i++) {
 
 
 //===============================Question 5==========================================
-// In output after display all items from array then display undefined because we use <= instead of < so 1 extra index number try to access but in array no item assign at that index so output will be undefined.
+// In output after display all items from array then display undefined because we use <= instead of < so 1 extra index
+// number try to access but in array no item assign at that index so output will be undefined.
