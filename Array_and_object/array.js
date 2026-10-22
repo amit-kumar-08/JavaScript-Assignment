@@ -151,3 +151,165 @@ for (let i = 0; i < students.length; i++) {
 //===============================Question 5==========================================
 // In output after display all items from array then display undefined because we use <= instead of < so 1 extra index
 // number try to access but in array no item assign at that index so output will be undefined.
+
+
+// # 7. Adding Elements to Arrays
+//===============================Question 1==========================================
+// push() method is used to add an element at the end of an array.
+
+
+//===============================Question 2==========================================
+// unshift() method is used to add an element at the beginning of an array.
+
+//===============================Question 3==========================================
+let nums = [1, 2, 3];
+nums.push(4);
+console.log(nums);
+
+// Output
+// [1, 2, 3, 4]
+
+//===============================Question 4==========================================
+//continuing from the previous question....
+nums.unshift(0);
+console.log(nums)
+
+
+//===============================Question 5==========================================
+// True
+
+
+// # 8. Removing Elements
+//===============================Question 1==========================================
+// pop() method removes the last element of an array.
+
+
+//===============================Question 2==========================================
+// shift() method removes the first element of an array.
+
+
+//===============================Question 3==========================================
+// let nums = [100, 200, 300, 400, 500];
+// nums.pop();
+
+// nums.pop() method remove last elements from this array.
+// and after calling it array contain [100, 200, 300, 400] 
+
+//===============================Question 4==========================================
+// After the previous operation...
+// nums.shift() method remove first element from that array.
+// and after calling it array contain [200, 300, 400]
+
+
+//===============================Question 5==========================================
+// True
+
+
+// # 9. Searching in Arrays
+//===============================Question 1==========================================
+//The indexOf() method return index number when the searched value is found in the array.
+
+
+//===============================Question 2==========================================
+// indexOf() return -1 when the value is not present in the array.
+
+
+//===============================Question 3==========================================
+const names = ["Jenil", "Mahir", "Arjun"];
+console.log(names.indexOf("Mahir"));
+
+//Output
+// 1
+
+
+//===============================Question 4==========================================
+// same previous array...
+console.log(names.indexOf("Krishna"));
+
+// Output
+// -1
+
+
+//===============================Question 5==========================================
+let students_ = ["Amit", "Neel", "Mohit", "Rohan", "Anand", "Priyesha"];
+console.log(students_.indexOf("Priyesha"));
+
+
+// 10. Array with Different Data Types
+//===============================Question 1==========================================
+// Yes, A JavaScript array store values of different data types (e.g., number, string, boolean, null) in the same array.
+
+
+//===============================Question 2==========================================
+let data = [8, "string", true, null];
+console.log(data);
+
+
+//===============================Question 3==========================================
+// we check the data type of each element in such an array using loop and typeof() method.
+
+
+//===============================Question 4==========================================
+// const data = [100, "Hello", true, null];
+// console.log(typeof data[0]);
+
+// Output
+// number
+
+
+//===============================Question 5==========================================
+// same previous array...
+// boolean, typeof data[2] returns for the same array. 
+
+
+
+// # 11. Array of Arrays (Matrix) – 2D Arrays
+//===============================Question 1==========================================
+// 2D array (array of arrays) commonly Used in tables, grids, games, and storing marks of multiple students.
+
+
+//===============================Question 2==========================================
+// const matrix = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6]
+// ];
+// console.log(matrix[2][1])
+
+// Output
+// 6
+
+
+//===============================Question 3==========================================
+let mat = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(mat[1][2]);
+
+
+
+//===============================Question 4==========================================
+const arr = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+];
+
+// we access and print the last element of the last row in this matrix 
+
+console.log(arr[2][2]);
+
+
+
+//===============================Question 5==========================================
+let array = [
+    [10, 20, 30],
+    [40, 50, 60]
+];
+
+array[1][1] = 100;
+
+console.log(array)
